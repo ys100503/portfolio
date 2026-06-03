@@ -54,16 +54,21 @@
 <div class="min-h-screen bg-black text-white">
 
 <!-- Hero Section -->
-<section class="h-screen flex items-center justify-center relative overflow-hidden" id="hero">
+<section class="h-screen flex items-center relative overflow-hidden" id="hero">
 <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20"></div>
 <div class="absolute inset-0">
 <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(17,24,39,0.7),rgba(0,0,0,1))]"></div>
 </div>
-<div class="relative z-10 text-center">
+<div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
+<p class="text-sm md:text-base text-purple-400 mb-4 hero-subtitle">Hello, I'm</p>
 <h1 class="text-4xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 hero-title gradient-text">전예성</h1>
-<p class="text-lg md:text-xl text-gray-300 mb-8 px-4 hero-subtitle">경북소프트웨어마이스터고등학교에서 다양한 분야를 공부하고 있습니다</p>
+<p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl hero-subtitle">경북소프트웨어마이스터고등학교에서 다양한 분야를 공부하고 있습니다</p>
+<div class="flex gap-4">
+<a href="#projects" class="inline-flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors font-medium">프로젝트 보기</a>
+<a href="#contact" class="inline-flex items-center px-6 py-3 border border-white/20 hover:bg-white/5 rounded-lg transition-colors">연락하기</a>
 </div>
-<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 hero-scroll">
+</div>
+<div class="absolute bottom-10 left-4 hero-scroll">
 <a href="#projects" class="scroll-down-link block">
 <div class="animate-bounce">
 <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,7 +81,8 @@
 
 <!-- Featured Projects -->
 <section class="py-12 md:py-20 px-4 max-w-7xl mx-auto fade-section" id="projects">
-<h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">주요 프로젝트</h2>
+<h2 class="text-3xl md:text-4xl font-bold mb-2">주요 프로젝트</h2>
+<p class="text-gray-400 mb-8 md:mb-12">개발한 프로젝트와 참여했던 경험을 소개합니다</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="group relative aspect-video bg-gradient-to-br from-purple-900/50 to-blue-900/50 rounded-xl overflow-hidden scale-in stagger-1 glow-hover">
 <img alt="프레스 이상 조기 감지 시스템" class="object-cover w-full h-full transition-transform group-hover:scale-105" src="images/code.jpg">
@@ -84,41 +90,55 @@
 <div class="absolute inset-0 p-6 flex flex-col justify-end">
 <h3 class="text-xl font-bold mb-2">프레스 이상 조기 감지 시스템</h3>
 <p class="text-gray-300 mb-4">실린경진대회 프로젝트 - 프레스 장비의 이상 징후를 조기에 감지하는 시스템</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-sm text-purple-300">Python</span>
+<span class="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-sm text-blue-300">IoT</span>
+<span class="px-3 py-1 bg-green-500/20 border border-green-500/30 rounded-full text-sm text-green-300">센서 데이터</span>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-</div>
-</div>
-<div class="group relative aspect-video bg-gradient-to-br from-purple-900/50 to-blue-900/50 rounded-xl overflow-hidden border-2 border-dashed border-white/10 scale-in stagger-2 float-anim">
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="text-center">
-<h3 class="text-xl font-bold mb-2 text-gray-400">프로젝트 2</h3>
-<p class="text-gray-500 mb-4">준비 중입니다...</p>
-<svg class="w-12 h-12 text-gray-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-</svg>
-</div>
-</div>
-</div>
+<!-- About Me -->
+<section class="py-12 md:py-20 px-4 max-w-7xl mx-auto fade-section" id="about">
+<h2 class="text-3xl md:text-4xl font-bold mb-2">자기소개</h2>
+<p class="text-gray-400 mb-8 md:mb-12">제에 대해 알아보세요</p>
+<div class="max-w-3xl space-y-6 text-gray-300 leading-relaxed">
+<p>안녕하세요, 경북소프트웨어마이스터고등학교에 재학 중인 <strong class="text-white">전예성</strong>입니다.</p>
+<p>프로그래밍과 소프트웨어 개발에 대한 열정을 가지고 있으며, 다양한 프로젝트를 통해 실질적인 경험을 쌓고 있습니다. 실린경진대회에서 프레스 이상 조기 감지 시스템을 개발하는 경험을 통해 문제 해결 능력과 팀워크의 중요성을 배웠습니다.</p>
+<p>지속적으로 새로운 기술을 학습하고 실제 서비스로 발전시킬 수 있는 개발자가 되는 것이 목표입니다. Node.js, Python 등 백엔드 개발에 관심이 많으며, 전단 개발에도 도전하고 있습니다.</p>
 </div>
 </section>
 
 <!-- Skills Section -->
 <section class="py-12 md:py-20 bg-gradient-to-b from-black to-purple-900/20 fade-section">
 <div class="max-w-7xl mx-auto px-4">
-<h2 class="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">스킬 &amp; 기술</h2>
-<div class="grid grid-cols-2 md:grid-cols-2 gap-8">
-<div class="bg-white/5 rounded-xl p-6 text-center hover:bg-white/10 transition-colors skill-card stagger-1 glow-hover"><h3 class="text-lg font-semibold">Node.js</h3></div>
-<div class="bg-white/5 rounded-xl p-6 text-center hover:bg-white/10 transition-colors skill-card stagger-2 glow-hover"><h3 class="text-lg font-semibold">Python</h3></div>
-
-
+<h2 class="text-3xl md:text-4xl font-bold mb-2">스킬 &amp; 기술</h2>
+<p class="text-gray-400 mb-8 md:mb-12">주요하게 사용하는 개발 도구와 언어입니다</p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors skill-card stagger-1 glow-hover"><h3 class="text-lg font-semibold mb-2">JavaScript</h3><p class="text-gray-400 text-sm">ES6+, Node.js 환경에서 웹 애플리케이션 개발에 활용</p></div>
+<div class="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors skill-card stagger-2 glow-hover"><h3 class="text-lg font-semibold mb-2">Python</h3><p class="text-gray-400 text-sm">데이터 분석, IoT 프로젝트, 자동화 스크립트 작성</p></div>
+<div class="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors skill-card stagger-3 glow-hover"><h3 class="text-lg font-semibold mb-2">Node.js</h3><p class="text-gray-400 text-sm">Express 프레임워크를 활용한 백엔드 서버 개발</p></div>
+<div class="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors skill-card stagger-4 glow-hover"><h3 class="text-lg font-semibold mb-2">React</h3><p class="text-gray-400 text-sm">컴포넌트 기반의 반응형 프론트엔드 개발</p></div>
+<div class="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors skill-card stagger-5 glow-hover"><h3 class="text-lg font-semibold mb-2">MySQL</h3><p class="text-gray-400 text-sm">관계형 데이터베이스 설계 및 쿼리 작성</p></div>
+<div class="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors skill-card stagger-6 glow-hover"><h3 class="text-lg font-semibold mb-2">Git</h3><p class="text-gray-400 text-sm">버전 관리, 협업 개발 워크플로우</p></div>
 </div>
 </div>
 </section>
 
 <!-- Footer -->
-<section class="py-12 md:py-20 px-4 bg-black border-t border-white/5 fade-section">
-<div class="max-w-3xl mx-auto text-center">
-<p class="text-gray-500 text-sm mb-8">경북, 대한민국</p>
-<div class="flex justify-center gap-6">
+<section class="py-12 md:py-20 px-4 bg-black border-t border-white/5 fade-section" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+<div>
+<h3 class="text-lg font-bold mb-4">연락하기</h3>
+<p class="text-gray-400 text-sm mb-2">프로젝트 협업이나 문의사항이 있으시면</p>
+<p class="text-gray-400 text-sm">소셜 미디어를 통해 연락주세요</p>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">연락처</h3>
+<div class="flex gap-6">
 <a href="https://github.com/ys100503" target="_blank" rel="noopener noreferrer" class="p-2 bg-white/5 rounded-full hover:bg-white/10 transition-colors" title="GitHub">
 <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.30 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
@@ -130,6 +150,11 @@
 </svg>
 </a>
 </div>
+<p class="text-gray-500 text-sm mt-4">경북, 대한민국</p>
+</div>
+</div>
+<hr class="border-white/5 my-8">
+<p class="text-gray-600 text-sm">© 2026 전예성. All rights reserved.</p>
 </div>
 </section>
 
